@@ -24,7 +24,7 @@ Unlike standard multiplayer games where both players see the same screen, **Sync
 
 | The Lobby | The Walker (Blind) | The Watcher (Guide) |
 | :---: | :---: | :---: |
-| *[Insert Login Screen Image]* | *[Insert Dark Grid Image]* | *[Insert Full Map Image]* |
+| ![Lobby](./client/screenshots/lobby.png) | ![Walker](./client/screenshots/walker.png) | ![Watcher](./client/screenshots/watcher.png) |
 
 ---
 
@@ -67,8 +67,9 @@ This project is a distributed system deployed across two cloud providers to opti
 * The game gets harder as you win.
 * **Level 1:** 60s Time.
 * **Level 4:** 30s Time + High Trap Density.
-* State is persisted across levels without page reloads.
+* State is persisted across levels without page reloads.  
 
+---
 
 ### 💻 Installation & Setup
 1. Clone the Repository: 
