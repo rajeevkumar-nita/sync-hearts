@@ -40,15 +40,26 @@ This project is a distributed system deployed across two cloud providers to opti
 | **Backend** | Node.js + Express | Lightweight server to handle game state and room logic. |
 | **Deployment** | Vercel (FE) + Render (BE) | Decoupled hosting for independent scaling. |
 
-### System Architecture
+### 🛠️ System Architecture
+
 ```mermaid
-[Player A (Browser)] <--> [Socket Connection] <--> [Node.js Server] <--> [Socket Connection] <--> [Player B (Browser)]
-                                      ^
-                                      |
-                                [Game State Store]
-                                (Rooms, Maps, Timers)
+graph TD
+    subgraph Clients
+        P1[Player A: Walker]
+        P2[Player B: Watcher]
+    end
 
+    subgraph "Backend (Node.js Server)"
+        S[Socket.io Server]
+        GSS[(Game State Store)]
+    end
 
+    P1 <-->|Socket Connection| S
+    P2 <-->|Socket Connection| S
+    S <--> GSS
+    
+    GSS --- L[Levels & Maps]
+    GSS --- T[Timers & Curses]
 
 ## 🚀 Key Features
 
