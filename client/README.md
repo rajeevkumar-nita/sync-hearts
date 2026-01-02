@@ -6,7 +6,7 @@
 
 **Sync Hearts** is a real-time, asymmetric cooperative web game designed to test communication and trust between two players. Built from scratch using **WebSockets** and **Procedural Generation algorithms**.
 
-🔗 **[PLAY THE LIVE DEMO HERE](https://couple-game.vercel.app/)**
+🔗 **[PLAY THE LIVE DEMO HERE](https://sync-hearts-mevg.vercel.app)**
 
 ---
 
@@ -47,26 +47,6 @@ This project is a distributed system deployed across two cloud providers to opti
                                       |
                                 [Game State Store]
                                 (Rooms, Maps, Timers)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
