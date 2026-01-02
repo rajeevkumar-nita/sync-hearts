@@ -60,6 +60,8 @@ graph TD
     
     GSS --- L[Levels & Maps]
     GSS --- T[Timers & Curses]
+```
+
 
 ## 🚀 Key Features
 
