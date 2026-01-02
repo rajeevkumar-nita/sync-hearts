@@ -87,7 +87,7 @@ graph TD
 ### 💻 Installation & Setup
 1. Clone the Repository: 
 ```bash
-git clone [https://github.com/rajeevkumar-nita/sync-hearts.git](https://github.com/rajeevkumar-nita/sync-hearts.git)
+git clone https://github.com/rajeevkumar-nita/sync-hearts.git
 cd sync-hearts
 ```
 
@@ -106,6 +106,18 @@ npm run dev
 ```
 
 4. Open in Browser: Visit http://localhost:5173. 
+
+---
+
+## 👤 Author
+
+**Rajeev Kumar** *Software Engineer | NIT Agartala | GlobalLogic*
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rajeevkumar-nita)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajeevkumar-nita)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rajeev.nita2025@gmail.com)
+
+---
 
 ### 📜 License
 Distributed under the MIT License.
