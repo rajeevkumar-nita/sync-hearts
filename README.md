@@ -68,3 +68,32 @@ This project is a distributed system deployed across two cloud providers to opti
 * **Level 1:** 60s Time.
 * **Level 4:** 30s Time + High Trap Density.
 * State is persisted across levels without page reloads.
+
+
+### 💻 Installation & Setup
+1. Clone the Repository: 
+```bash
+git clone [https://github.com/rajeevkumar-nita/sync-hearts.git](https://github.com/rajeevkumar-nita/sync-hearts.git)
+cd sync-hearts
+```
+
+2. Setup Server: 
+```bash
+cd server
+npm install
+npm run dev
+```
+
+3. Setup Client: 
+```bash
+cd ../client
+npm install
+npm run dev
+```
+
+4. Open in Browser: Visit http://localhost:5173. 
+
+### 📜 License
+Distributed under the MIT License.
+
+Developed with ❤️ by Rajeev Kumar
