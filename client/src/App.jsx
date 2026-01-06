@@ -136,43 +136,7 @@ function App() {
 
   // Waiting screen logic was inline in original:
   if (!gameStarted) {
-    // In original code:
-    // {!gameStarted ? ( ... Waiting for partner ... ) : ( ... Game ... )}
-    // And surrounding usage of bgClass etc.
-    // I should probably pass this "Waiting" state to GameScreen or handle it here.
-    // The original code rendered the "Waiting" text inside the main container with `bgClass`.
-    // So `GameScreen` is probably best place for the container and waiting text, 
-    // OR we render a simple waiting div here reusing the container style.
-    // Let's look at GameScreen component I made.
-    // It renders `bgClass` container.
-    // It renders `VoiceChat`.
-    // It renders `map` if `gameStarted`??
-    // My GameScreen I made ASSUMES `map` is valid?
-    // Wait, my GameScreen has `{map.map...}` which would crash if map is empty/undefined?
-    // In original, `map` is set in `start_game`.
-    // So if `!gameStarted`, we shouldn't render `GameScreen`'s map part.
-    // But `GameScreen` component I wrote handles the layout. 
 
-    // I should probably modify `GameScreen` to assume game is started OR handle waiting state.
-    // BUT, I'll just render the waiting screen here for simplicity if I didn't add waiting logic to GameScreen.
-
-    // Actually, I put `VoiceChat` in `GameScreen`.
-    // And `bgClass` logic is in `GameScreen`.
-    // So if I don't render `GameScreen`, I lose the background styling.
-
-    // Let's render GameScreen but pass a prop `gameStarted`.
-    // I need to update GameScreen to handle `!gameStarted`.
-
-    // Re-reading my `GameScreen` code from Step 66.
-    // It does NOT check `gameStarted`. It goes straight to rendering `map`.
-    // It renders `VoiceChat`.
-    // It renders `activeCurse` banner.
-
-    // So I need to update `GameScreen` to handle the waiting state.
-    // OR I just handle it in App and duplicate the container style? 
-    // Duplicating container style is bad.
-
-    // I will update `GameScreen` to accept `gameStarted` prop.
     return (
       <GameScreen
         socket={socket}

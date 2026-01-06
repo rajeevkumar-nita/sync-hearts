@@ -10,7 +10,7 @@ if (typeof window !== "undefined") {
 const VoiceChat = ({ socket, roomCode, myRole }) => {
   const [stream, setStream] = useState(null);
   const [isMuted, setIsMuted] = useState(false);
-  const [volume, setVolume] = useState(1); // 0–1
+  const [volume, setVolume] = useState(1);
   const userAudio = useRef(null);
   const connectionRef = useRef(null);
   const localStreamRef = useRef(null);
